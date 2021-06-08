@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CRUD - SIMPLES</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <section class="container">
+    <form class="item" onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+      <div>
+        <label for="nome">Seu nome <span class="requirido">*</span></label>
+        <input type="text" name="nome" id="nome" required>
+      </div>
+      <div>
+        <label for="cep">CEP <span class="requirido">*</span></label>
+        <input type="text" name="cep" id="cep" required>
+      </div>
+      <div>
+        <label for="salario">Salário <span class="requirido">*</span></label>
+        <input type="text" name="salario" id="salario" required>
+      </div>
+      <div>
+        <label for="cidade">Cidade <span class="requirido">*</span></label>
+        <input type="text" name="cidade" id="cidade" required>
+      </div>
+      <div class="form-action-button">
+        <input class="enviar" type="submit" value="Enviar">
+      </div>
+    </form>
+    <table class="list item" id="employeeList">
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>CEP</th>
+          <th>Salário</th>
+          <th>Cidade</th>
+          <th>Botões</th>
+        </tr>
+      </thead>
+      <tbody>
+
+      </tbody>
+    </table>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
